@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>QuizzOnline</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            body{
+               background-repeat: no-repeat;
+               background-image: url("https://www.infocannabis.org/wp-content/uploads/2017/03/mt-sample-background.jpg");
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container p-3 my-3 bg-dark text-white">
+            <h1>Results</h1>
+            <p>“Somewhere, something incredible is waiting to be known.” 
+            - Carl Sagan </p>
+          </div>
+        <div>
+            <div class="container p-3 my-3 bg-dark text-white">
+                <h3>Your Score : {{score}}</h3>
+                {% if score==5 %}
+                <p>Congratulations</p>
+                {% endif %}
+                <p>Total Questions : 5</p>
+                <a href="/">Retry</a>
+              </div>
+            <div>
+     
+    </body>
+</html>
